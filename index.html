@@ -3,42 +3,43 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<!-- displays site properly based on user's device -->
-
 		<link
 			rel="icon"
 			type="image/png"
 			sizes="32x32"
 			href="./assets/images/favicon-32x32.png"
 		/>
-
 		<title>Frontend Mentor | Recipe page</title>
-
 		<link rel="stylesheet" href="index.css" />
 	</head>
 	<body>
-		<div id="card">
-			<img src="assets/images/image-omelette.jpeg" alt="Omelette dish" />
+		<main id="card">
+			<img
+				src="assets/images/image-omelette.jpeg"
+				alt="A plate with a simple omelette, greens, and cheese"
+				width="1000px"
+				height="600px"
+			/>
 
-			<div id="first-container">
+			<header id="first-container">
 				<h1>Simple Omelette Recipe</h1>
 				<p>
 					An easy and quick dish, perfect for any meal. This classic omelette
 					combines beaten eggs cooked to perfection, optionally filled with your
 					choice of cheese, vegetables, or meats.
 				</p>
-			</div>
+			</header>
 
-			<div id="preparation-container">
+			<section aria-label="Preparation time" id="preparation-container">
 				<h3>Preparation time</h3>
 				<ul>
-					<li>Total: Approximately 10 minutes</li>
-					<li>Preparation: 5 minutes</li>
-					<li>Cooking: 5 minutes</li>
+					<li><span>Total:</span> Approximately 10 minutes</li>
+					<li><span>Preparation:</span> 5 minutes</li>
+					<li><span>Cooking:</span> 5 minutes</li>
 				</ul>
-			</div>
+			</section>
 
-			<div id="ingredients-container">
+			<section aria-label="Ingredients" id="ingredients-container">
 				<h2>Ingredients</h2>
 				<ul>
 					<li>2-3 large eggs</li>
@@ -49,11 +50,9 @@
 						Optional fillings: cheese, diced vegetables, cooked meats, herbs
 					</li>
 				</ul>
-			</div>
+			</section>
 
-			<hr />
-
-			<div id="instructions-container">
+			<section aria-label="Instructions" id="instructions-container">
 				<h2>Instructions</h2>
 				<ol>
 					<li>
@@ -85,11 +84,9 @@
 						needed.
 					</li>
 				</ol>
-			</div>
+			</section>
 
-			<hr />
-
-			<div id="nutrition-container">
+			<section aria-label="Nutrition" id="nutrition-container">
 				<h2>Nutrition</h2>
 				<p>
 					The table below shows nutritional values per serving without the
@@ -113,9 +110,9 @@
 						<th>22g</th>
 					</tr>
 				</table>
-			</div>
+			</section>
 
-			<div class="attribution">
+			<footer class="attribution">
 				Challenge by
 				<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
 					>Frontend Mentor</a
@@ -123,7 +120,7 @@
 				<a href="https://www.frontendmentor.io/profile/VictorBlascoCano"
 					>Victor Blasco Cano</a
 				>.
-			</div>
-		</div>
+			</footer>
+		</main>
 	</body>
 </html>

@@ -18,30 +18,78 @@
 body {
 	margin: 0;
 	background-color: hsl(30, 54%, 90%);
-	padding: 10% 20%;
+	padding: 40px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100dvh;
 }
 
 p {
 	font-size: 16px;
+	margin: 0;
 }
 
 img {
-	border-radius: 30px;
+	border-radius: 15px;
+	width: 100%;
+	height: auto;
+	max-height: 500px;
+	object-fit: cover;
+	margin-bottom: 32px;
+}
+
+h1,
+h2,
+h3 {
+	margin: 0;
+	font-weight: 400;
 }
 
 h1 {
-	font-size: 55px;
-	font-family: "Young Serif", sans-serif;
+	font-size: 2.8rem;
+	font-family: "Young Serif", serif;
+	color: hsl(24, 5%, 18%);
+	margin-bottom: 18px;
+}
+
+h2 {
+	font-size: 1.6rem;
+	font-family: "Young Serif", serif;
+	color: hsl(14, 45%, 36%);
+	margin-bottom: 16px;
+}
+
+h3 {
+	font-size: 1.1rem;
+	color: hsl(332, 51%, 32%);
+	margin-bottom: 12px;
+	font-weight: 700;
 }
 
 table {
-	border: 1px solid black;
 	width: 100%;
+	border-collapse: collapse;
+	margin-top: 16px;
 }
 
-hr {
-	border: 1px solid black;
+table tr {
 	width: 100%;
+	border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+table td {
+	width: 50%;
+	padding: 12px 0;
+	padding-left: 30px;
+}
+
+table th {
+	width: 50%;
+	padding: 12px 0;
+	text-align: left;
+	color: hsl(14, 45%, 36%);
+	font-weight: 700;
 }
 
 li {
@@ -51,18 +99,23 @@ li {
 .attribution {
 	font-size: 11px;
 	text-align: center;
-}
-.attribution a {
-	color: hsl(228, 45%, 44%);
+	margin-top: 32px;
+	color: hsl(30, 10%, 34%);
+	& a {
+		color: hsl(228, 45%, 44%);
+	}
 }
 
 #card {
 	background-color: white;
-	padding: 70px;
+	padding: 40px;
+	max-width: 750px;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	border-radius: 50px;
+	border-radius: 25px;
+	box-shadow: 0 4px 32px rgba(0, 0, 0, 0.04);
 }
 
 #first-container {
@@ -71,23 +124,68 @@ li {
 
 #preparation-container {
 	background-color: hsl(330, 100%, 98%);
-	padding: 20px;
-	border-radius: 30px;
+	padding: 24px 32px;
+	border-radius: 15px;
 	width: 100%;
-	& h3 {
-		color: hsl(332, 51%, 32%);
-	}
+	margin: 30px 0;
+}
+
+#preparation-container ul {
+	margin: 0;
+	padding-left: 22px;
+}
+
+#preparation-container li {
+	color: hsl(332, 51%, 32%);
+	margin-bottom: 6px;
+}
+
+#preparation-container span {
+	font-weight: 600;
 }
 
 #ingredients-container {
 	width: 100%;
+	border-bottom: 1px solid hsl(30, 18%, 87%);
+	margin-bottom: 30px;
+	padding-bottom: 20px;
+}
+
+#ingredients-container ul {
+	padding-left: 20px;
+}
+
+#ingredients-container li {
+	color: hsl(30, 10%, 34%);
+	margin-bottom: 10px;
+}
+
+#instructions-container {
+	width: 100%;
+	border-bottom: 1px solid hsl(30, 18%, 87%);
+	margin-bottom: 30px;
+	padding-bottom: 20px;
+}
+
+#instructions-container ol {
+	padding-left: 22px;
+}
+
+#instructions-container li {
+	margin-bottom: 16px;
+	color: hsl(30, 10%, 34%);
+}
+
+#instructions-container li::marker {
+	font-weight: bold;
 }
 
 #instructions-container span {
-	width: 100%;
-	font-weight: bold;
+	font-weight: 700;
+	color: hsl(14, 45%, 36%);
 }
 
 #nutrition-container {
 	width: 100%;
+	color: hsl(30, 10%, 34%);
 }
